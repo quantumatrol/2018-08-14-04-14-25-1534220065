@@ -2,7 +2,7 @@ module.exports = function main(number) {
     var lcdFirstLine =  ['._.','...','._.','._.','...','._.','._.','._.','._.','._.'];
     var lcdSecondLine = ['|.|','..|','._|','._|','|_|','|_.','|_.','..|','|_|','|_|'];
     var lcdThirdLine =  ['|_|','..|','|_.','._|','..|','._|','|_|','..|','|_|','..|'];
-    number = 10;
+    //number = 10;
     var stringOfNumber = number.toString();
     var lineFirst="";
     var lineSecond="";
@@ -14,7 +14,7 @@ module.exports = function main(number) {
         lineSecond+= lcdSecondLine[Number(stringOfNumber[i])]+" ";
         lineThird += lcdThirdLine[Number(stringOfNumber[i])]+" ";
     }
-
     console.log();
-    return lineFirst+"\n"+lineSecond+'\n'+lineThird;
+    return lineFirst.substr(0,lineFirst.length-1)+"\n"+
+        lineSecond.substr(0,lineSecond.length-1)+'\n'+lineThird.substr(0,lineThird.length-1)+"\n";
 };
