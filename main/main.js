@@ -15,6 +15,6 @@ module.exports = function main(number) {
         lineThird += lcdThirdLine[Number(stringOfNumber[i])]+" ";
     }
 
-    console.log(lineFirst+"\n"+lineSecond+'\n'+lineThird);
-    return 'Hello World!';
+    console.log();
+    return lineFirst+"\n"+lineSecond+'\n'+lineThird;
 };
